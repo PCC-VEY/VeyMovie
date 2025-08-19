@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex; /* make children side by side */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(7, 106, 126, 1) 100%);
+}
+
+.box .pic, 
+.box .login {
+    flex: 1; /* equal split */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box .pic img {
+    border-radius: 40px;
+    max-width: 80%;
+    height: auto;
+    
+
+}
+.box .pic img:hover {
+    transform: translateX(10px);
+    text-decoration: underline;
+}
+
+h1 {
+    color: rgb(49, 237, 93);
+    margin-bottom: 20px;
+}
+
+.input-text {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative; /* for icons */
+}
+
+.input-text input {
+    width: 100%;
+    padding: 12px 40px 12px 15px; /* add space for icons */
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-text label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-text i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.rm {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.rm a {
+    text-decoration: none;
+}
+
+.rm a:hover {
+    text-decoration: underline;
+}
+
+.twin {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(194, 10, 10);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(144, 235, 8);
+}
